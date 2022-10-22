@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Terry</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/glightbox@3.1.0/dist/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.7.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"></script>
+  <!-- Vendor JS Files -->
+  <script src="https://unpkg.com/glightbox@3.1.0/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img style="width: 600px; height: auto;" src="../imgs/terry/DSC_0055.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img style="width: 600px; height: auto;" src="../imgs/terry/IMG_20220830_111804.jpg">
+                </div>
+
+                <div class="swiper-slide">
+                  <video width="600" height="240" controls>
+                    <source src="../imgs/terry/IMG_9044.mp4" type="video/mp4">
+                  </video>
+                </div>
+
+                <div class="swiper-slide">
+                  <video width="400" height="240" controls>
+                    <source src="../imgs/terry/IMG_9112.mp4" type="video/mp4">
+                  </video>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <!--
+            <div class="portfolio-info">
+              <h3>Week 1: 3D Design</h3>
+              <ul>
+                <li><strong>Date</strong>: September 7th 2022 - September 13th 2022</li>
+              </ul>
+            </div>
+            -->
+            <div class="portfolio-description">
+              <h3>Terry, My 6DOF Spherical Robot Arm</h3>
+              <p> Here is a project I worked on during the summer of 2020. </p>
+
+              <p>Terry is a 6 dof spherical robot arm that is capable of visiting any position and orientation in space within the arm's reach. When completely vertical, Terry is just over 50" tall.  Terry is made from readily available materials like sheet metal, box tubing, 3d printer filament, and over the counter components. All the machining was done either by hand or with the CNC router I made a while back in high school.  The project is ongoing, with efforts to write an inverse kinematic solver from scratch.</p>
+
+              <p> The project files can be found at: https://github.com/evagorac/terry </p>
+
+              <img style="width: 600px; height: auto;" src="../imgs/terry/cad.png">
+              <img style="width: 600px; height: auto;" src="../imgs/terry/dims.png">
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Hardware</h3>
+            <div class="resume-item pb-0">
+              <h4>Electronics</h4>
+              <p>Terry uses two series server supplies at 12V 60A each.  Terry uses 24V Odrives for all axes.  A single raspberry pi communicates to the motor controllers over USB and receives commands over a network.</p>
+              <img style="width: 600px; height: auto;" src="../imgs/terry/IMG_9039.JPG">
+            </div>
+            <p></p>
+            <div class="resume-item pb-0">
+              <h4>Joints</h4>
+              <p>Something unique about my design might be the ball screws that drive j2 and j3 with push rods instead of connecting the output of a motor shaft to the axis of rotation.  I did this to remove as much backlash in j2 and j3 without the need for super expensive harmonic / cycloidal gearboxes that are standard in most industrial robot arms.  </p>
+              <img style="width: 600px; height: auto;" src="../imgs/terry/DSC_0063.jpg">
+              <p></p>
+              <p> I also used a differential in the wrist of the robot to allow J6 to rotate indefinitely. </p>
+              <img style="width: 600px; height: auto;" src="../imgs/terry/DSC_0057.jpg">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section><!-- End Resume Section -->
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
